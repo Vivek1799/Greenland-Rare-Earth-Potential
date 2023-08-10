@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <title>Greenland's Rare Earth Potential</title>
+</head>    
+    <style>
+        #map {
+            width: 100%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+        .scroll-section {
+            position: relative;
+            width: 100%;
+            /* height: calc(100vh + 300px);; */
+            z-index: 4;
+        }
+        .step {
+    height: 150vh;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(30, 3, 3); /* or any color that contrasts with your map colors */
+    z-index: 1;
+    position: relative; /* make sure the position is not 'static' */
+    border-radius: 10px;
+    opacity: 2;
+}
+.white-text {
+    color: white !important;
+}
+
+ 
+.step p {
+    background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
+    color: rgb(255, 255, 255); /* white text */
+    padding: 10px;
+    border-radius: 10px;
+    font-style: 'Roboto', sans-serif;
+}
+
+/* .intro-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    z-index: 2;
+    position: relative; /* make sure the position is not 'static' */
+} */
+/* .intro-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+} */
+
+/* .intro-section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+} */
+
+
+
+body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255); /* Making the background of the entire page white */
+        }
+        
+        .story {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Adjusting the alignment of items to start at the top of their containers */
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px 80px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .column {
+            flex: 1;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        
+        .graphic.wide {
+            flex: 1;
+            background-color: #fff; /* Making the background of the graphic white */
+            height: auto; /* Allowing the GIF to determine the height */
+            overflow: hidden;
+            margin-left: -40px;
+        }
+        
+        .graphic.wide img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: top; /* Removing any unwanted space below the image */
+            margin-right: 20px;
+        }
+        
+        h1.column {
+            font-size: 0.7em; /* Adjust to increase or decrease font size */
+            font-weight: 400; /* Adjust for boldness: normal=400, bold=700 */
+            color: #333; /* Adjust for font color */
+            text-transform: none; /* Change to 'uppercase' for ALL CAPS, 'capitalize' for Title Case */
+            letter-spacing: normal; /* Increase or decrease for spacing between characters */
+            margin-top: 20px; /* Adjust to increase or decrease spacing above the headline */
+            margin-bottom: 20px; /* Adjust to increase or decrease spacing below the headline */
+            margin-left: 0; /* Adjust to increase or decrease spacing to the left of the headline */
+            margin-right: 0; /* Adjust to increase or decrease spacing to the right of the headline */
+        }
+        
+        
+        .byline {
+            font-weight: 400;
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .byline .date {
+            font-weight: 300;
+            color: #888;
+            margin-left: 10px;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 20px auto 50px;
+            padding: 0 80px;
+            background-color: #fff;
+        }
+        
+        .column h3 {
+            margin-top: 40px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .column p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .column.graphic {
+            background-color: #eee; /* Placeholder until your graphic is added */
+            height: 400px; /* Adjust as per your graphic's size */
+            margin-bottom: 20px;
+        }
+        
+        .source {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        <!-- Generated by ai2html v0.119.6 - 2023-08-08 13:20 -->
+<!-- ai file: visualization-china's-domainance.ai -->
+<style media="screen,print">
+	#g-visualization-china_s-domainance-box ,
+	#g-visualization-china_s-domainance-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-visualization-china_s-domainance-box p {
+		margin:0;
+	}
+	#g-visualization-china_s-domainance-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-visualization-china_s-domainance-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-visualization-china_s-domainance-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-visualization-china_s-domainance-box .g-aiPointText p { white-space: nowrap; }
+	#g-visualization-china_s-domainance-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 p {
+		font-family:nyt-cheltenham,georgia,serif;
+		font-weight:500;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0.05em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle0 {
+		font-weight:700;
+		line-height:22px;
+		height:22px;
+		letter-spacing:0.005em;
+		font-size:18px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		letter-spacing:0em;
+		font-size:12px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle2 {
+		height:13px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle3 {
+		height:13px;
+		letter-spacing:0em;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle4 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle5 {
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		font-size:10px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle6 {
+		line-height:12px;
+		height:12px;
+		letter-spacing:0.005em;
+		font-size:10px;
+	}
+	#g-visualization-china_s-domainance-Artboard_3 .g-pstyle7 {
+		height:13px;
+		letter-spacing:0.005em;
+	}
+
+</style>
+
+<!-- Generated by ai2html v0.119.6 - 2023-08-08 14:55 -->
+<!-- ai file: TXjbQ--insert-title-here--rgb.svg -->
+<style media="screen,print">
+	#g-TXjbQ--insert-title-here--rgb_svg-box ,
+	#g-TXjbQ--insert-title-here--rgb_svg-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-box p {
+		margin:0;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-box .g-aiPointText p { white-space: nowrap; }
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 p {
+		font-family:nyt-cheltenham,georgia,serif;
+		font-weight:500;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 .g-pstyle0 {
+		font-weight:700;
+		line-height:22px;
+		height:22px;
+		font-size:18px;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(166,166,166);
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 .g-pstyle2 {
+		height:13px;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 .g-pstyle3 {
+		line-height:17px;
+		height:17px;
+		font-size:14px;
+	}
+	#g-TXjbQ--insert-title-here--rgb_svg-Artboard_1 .g-pstyle4 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+	}
+
+</style>
+
+    </style>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.0/mapbox-gl-draw.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css' rel='stylesheet' />
+    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+       <!-- Headline and Story Section -->
+       <div class="story">
+        <div class="column">
+            <h1 style="font-size: 1.8em; font-weight: 700; color: #333;  letter-spacing: 1px; margin-top: 150px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">Mineral Riches and Melting Ice: Greenland’s Rare Earth Opportunity And Challenge</h1>
+            <p class="byline">By Vivek Patil <span class="date">August 12, 2023</span></p>
+        </div>
+        
+        <!-- Graphic Section -->
+        <div class="graphic wide">
+            <img src="Graphics/Greenland-mines-gif/Greenland-gif-mines-mapped1.gif" alt="Description of the GIF">
+        </div>
+    </div>
+
+    <div class="content">
+        <p>
+            Tucked in the far northeast corner of North America, inhabited by the indigenous Inuit people for thousands of years, lies the largest island on the globe - Greenland. With a population of just over 56,000 people, and 80% of its land covered by ice, the island is known more for its ice sheets and beauty than its mineral riches. Yet locked beneath Greenland's surface are sources of a potential transformation in the global supply of rare earth elements (REEs) - the crucial ingredients that power our electronic devices and future green technologies.
+        </p>
+        <p>
+            With the race to mine rare earth minerals intensifying in order to meet the zero carbon pledges of 2030 and beyond that many countries have committed to, Greenland finds itself in the geopolitical spotlight. China, which already dominates the rare earth market, refining over 70% of the world’s supply due to lower costs and less stringent regulations, has leveraged its dominance before, suspending exports to Japan in 2010 over territorial disputes. Now, as tensions with the West grow, China is again flexing its muscle over these critical minerals. New export limits on <a href="https://www.npr.org/2023/07/04/1185940293/china-imposes-export-controls-on-two-metals-used-in-semiconductors-and-solar-pan">germanium and gallium,</a> used in semiconductor and military technologies, along with <a href="https://asia.nikkei.com/Spotlight/Supply-Chain/China-weighs-export-ban-for-rare-earth-magnet-tech">threats to prohibit exports</a> of magnet processing technology, have set off alarm bells.
+        </p>
+        
+        <div class="graphic" style="padding-left: 160px;">
+            
+            
+            <div id="g-visualization-china_s-domainance-box" class="ai2html">
+
+                <!-- Artboard: Artboard_3 -->
+                <div id="g-visualization-china_s-domainance-Artboard_3" class="g-artboard" style="max-width: 744px;max-height: 396px" data-aspect-ratio="1.879" data-min-width="0">
+            <div style="padding: 0 0 53.2322% 0;"></div>
+                    <img id="g-visualization-china_s-domainance-Artboard_3-img" class="g-visualization-china_s-domainance-Artboard_3-img g-aiImg" alt="" src="Graphics/Greenland-graphics-1/visualization-china_s-domainance-Artboard_3.png"/>
+                    <div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:6.2235%;margin-top:-11.6px;left:10.4497%;width:498px;">
+                        <p class="g-pstyle0">China&rsquo;s Dominance Across the Rare Earth Elements Supply Chain</p>
+                    </div>
+                    <div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:22.8124%;margin-top:-7.3px;left:1.1518%;width:108px;">
+                        <p class="g-pstyle1">Global Production</p>
+                    </div>
+                    <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.9721%;margin-top:-7.3px;left:1.1389%;width:107px;">
+                        <p class="g-pstyle1">Global Processing</p>
+                    </div>
+                    <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.1318%;margin-top:-7.3px;left:0.8741%;width:121px;">
+                        <p class="g-pstyle1">Global Consumption</p>
+                    </div>
+                    <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.8185%;margin-top:-6.6px;left:30.8392%;width:34px;">
+                        <p class="g-pstyle2">20</p>
+                    </div>
+                    <div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.8185%;margin-top:-6.6px;left:63.1282%;width:34px;">
+                        <p class="g-pstyle3">60</p>
+                    </div>
+                    <div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.071%;margin-top:-6.6px;left:79.2774%;width:33px;">
+                        <p class="g-pstyle3">80</p>
+                    </div>
+                    <div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.071%;margin-top:-6.6px;left:47.0216%;width:33px;">
+                        <p class="g-pstyle3">40</p>
+                    </div>
+                    <div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.0043%;margin-top:-6.3px;left:94.8013%;width:31px;">
+                        <p class="g-pstyle4">%</p>
+                    </div>
+                    <div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.5692%;margin-top:-6.3px;left:88.8669%;width:46px;">
+                        <p class="g-pstyle5">China</p>
+                    </div>
+                    <div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.6091%;margin-top:-6.3px;left:88.8669%;width:75px;">
+                        <p class="g-pstyle5">United States</p>
+                    </div>
+                    <div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.649%;margin-top:-6.3px;left:88.8588%;width:59px;">
+                        <p class="g-pstyle5">Australia</p>
+                    </div>
+                    <div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.689%;margin-top:-6.3px;left:88.8669%;width:91px;">
+                        <p class="g-pstyle5">Rest of the World</p>
+                    </div>
+                    <div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.8624%;margin-top:-6.8px;left:1.7048%;width:318px;">
+                        <p class="g-pstyle2">Source: U.S. Geological Survey, International Energy Agency</p>
+                    </div>
+                    <div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.5063%;margin-top:-6.3px;left:85.1068%;width:116px;">
+                        <p class="g-pstyle6">Each cell represents 1%</p>
+                    </div>
+                    <div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.9023%;margin-top:-6.8px;left:1.6392%;width:114px;">
+                        <p class="g-pstyle7">Chart By: Vivek Patil</p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <!-- End ai2html - 2023-08-08 13:20 -->
+        </div>
+
+        <p>The West is seeking to reduce its vulnerability and develop alternative rare earth supply chains not dependent on China. And Greenland, with its vast untouched deposits, may hold the key. According to a <a href="https://www.sciencedirect.com/science/article/pii/S0169136823001439?ref=pdf_download&fr=RR-2&rr=7f120cef8f3b430e">recent dataset</a>, “just two mines in Greenland - Kvanefjeld and Kringlerne - hold enough valuable deposits that they could potentially account for 22% of the total new rare earth production value from all the emerging projects worldwide.” Although its current output is negligible, the researchers compare Greenland’s share of REE resources to entire continents and find that the island possesses the third-largest share, behind the continents of Asia and Australia. 
+        </p>
+
+        <p>
+            The <a href="https://www.sciencedirect.com/science/article/pii/S0169136823001439?ref=pdf_download&fr=RR-2&rr=7f120cef8f3b430e">report</a>, the most comprehensive dataset of its kind to date, analyzed over 146 rare earth mining projects that account for 303.4 million tons of rare earth oxides worldwide. Researchers at the Chinese Academy of Sciences, Geological Survey of Finland, and Minmetals Rare Earth Group forecast a transformation in global rare earth element supply driven by new projects outside of China.  
+        </p>
+
+        <div id="g-TXjbQ--insert-title-here--rgb_svg-box" class="ai2html">
+
+            <!-- Artboard: Artboard_1 -->
+            <div id="g-TXjbQ--insert-title-here--rgb_svg-Artboard_1" class="g-artboard" style="max-width: 834px;max-height: 660px" data-aspect-ratio="1.264" data-min-width="0">
+        <div style="padding: 0 0 79.1367% 0;"></div>
+                <img id="g-TXjbQ--insert-title-here--rgb_svg-Artboard_1-img" class="g-TXjbQ--insert-title-here--rgb_svg-Artboard_1-img g-aiImg" alt="" src="Graphics/Greenland-graphics-2/TXjbQ--insert-title-here--rgb_svg-Artboard_1.png"/>
+                <div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:5.2497%;margin-top:-11.6px;left:0.8649%;width:647px;">
+                    <p class="g-pstyle0">Just  Two Mines In Greenland Hold 13% of World&rsquo;s Rare Earth Resources, 22% of Value </p>
+                </div>
+                <div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:10.5073%;margin-top:-7.3px;left:9.2924%;width:50px;">
+                    <p class="g-pstyle1">100%</p>
+                </div>
+                <div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:10.5787%;margin-top:-6.8px;left:14.4416%;width:70px;">
+                    <p class="g-pstyle2">S. America</p>
+                </div>
+                <div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:13.0161%;margin-top:-8.9px;left:84.8887%;width:41px;">
+                    <p class="g-pstyle3">4%</p>
+                </div>
+                <div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:16.2649%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">90</p>
+                </div>
+                <div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:17.713%;margin-top:-8.9px;left:13.8778%;width:73px;">
+                    <p class="g-pstyle3">Australia</p>
+                </div>
+                <div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.4403%;margin-top:-8.9px;left:14.2034%;width:48px;">
+                    <p class="g-pstyle3">22%</p>
+                </div>
+                <div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:23.2346%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">80</p>
+                </div>
+                <div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:29.8211%;margin-top:-6.8px;left:14.1487%;width:54px;">
+                    <p class="g-pstyle2">Europe</p>
+                </div>
+                <div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:30.1373%;margin-top:-8.9px;left:84.1689%;width:48px;">
+                    <p class="g-pstyle3">22%</p>
+                </div>
+                <div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:30.2043%;margin-top:-7.3px;left:10.1089%;width:34px;">
+                    <p class="g-pstyle1">70</p>
+                </div>
+                <div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:33.3059%;margin-top:-6.8px;left:14.1507%;width:49px;">
+                    <p class="g-pstyle2">Africa</p>
+                </div>
+                <div id="g-ai0-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:36.3362%;margin-top:-6.8px;left:13.9895%;width:73px;">
+                    <p class="g-pstyle2">N. America </p>
+                </div>
+                <div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:37.0224%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">60</p>
+                </div>
+                <div id="g-ai0-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:42.41%;margin-top:-8.9px;left:13.7815%;width:84px;">
+                    <p class="g-pstyle3">Greenland </p>
+                </div>
+                <div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:43.9921%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">50</p>
+                </div>
+                <div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:44.7496%;margin-top:-7.3px;left:14.287%;width:43px;">
+                    <p class="g-pstyle4">13%</p>
+                </div>
+                <div id="g-ai0-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:45.7433%;margin-top:-8.9px;left:83.8966%;width:48px;">
+                    <p class="g-pstyle3">54%</p>
+                </div>
+                <div id="g-ai0-19" class="g-exportSvg g-aiAbs g-aiPointText" style="top:50.8103%;margin-top:-7.3px;left:10.106%;width:35px;">
+                    <p class="g-pstyle1">40</p>
+                </div>
+                <div id="g-ai0-20" class="g-exportSvg g-aiAbs g-aiPointText" style="top:57.78%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">30</p>
+                </div>
+                <div id="g-ai0-21" class="g-exportSvg g-aiAbs g-aiPointText" style="top:61.0463%;margin-top:-8.9px;left:14.1135%;width:47px;">
+                    <p class="g-pstyle3">Asia</p>
+                </div>
+                <div id="g-ai0-22" class="g-exportSvg g-aiAbs g-aiPointText" style="top:63.7736%;margin-top:-8.9px;left:14.021%;width:48px;">
+                    <p class="g-pstyle3">45%</p>
+                </div>
+                <div id="g-ai0-23" class="g-exportSvg g-aiAbs g-aiPointText" style="top:64.7497%;margin-top:-7.3px;left:10.1089%;width:35px;">
+                    <p class="g-pstyle1">20</p>
+                </div>
+                <div id="g-ai0-24" class="g-exportSvg g-aiAbs g-aiPointText" style="top:71.5679%;margin-top:-7.3px;left:10.1089%;width:33px;">
+                    <p class="g-pstyle1">10</p>
+                </div>
+                <div id="g-ai0-25" class="g-exportSvg g-aiAbs g-aiPointText" style="top:78.5376%;margin-top:-7.3px;left:10.9091%;width:29px;">
+                    <p class="g-pstyle1">0</p>
+                </div>
+                <div id="g-ai0-26" class="g-exportSvg g-aiAbs g-aiPointText" style="top:81.8709%;margin-top:-7.3px;left:83.1268%;width:95px;">
+                    <p class="g-pstyle4">Total Value (%)</p>
+                </div>
+                <div id="g-ai0-27" class="g-exportSvg g-aiAbs g-aiPointText" style="top:81.8709%;margin-top:-7.3px;left:7.605%;width:112px;">
+                    <p class="g-pstyle4">Total Resource (%)</p>
+                </div>
+                <div id="g-ai0-28" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.1544%;margin-top:-13.4px;left:0.8233%;width:731px;">
+                    <p class="g-pstyle2">Note: : Data on rare earth resource and value distributions by continent are estimated values from Fan et al. (2023). The percentages indicate each location's share of</p>
+                    <p class="g-pstyle2">total global rare earth resources and total value as analyzed and projected in the study based on known reserves and projects.</p>
+                </div>
+                <div id="g-ai0-29" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.7604%;margin-top:-6.8px;left:0.7439%;width:598px;">
+                    <p class="g-pstyle2">Source: S. Liu, H. Fan, H. Liu, X. Lui, J. Meng et al. Global rare earth elements projects: New developments and supply chains (2023)</p>
+                </div>
+                <div id="g-ai0-30" class="g-exportSvg g-aiAbs g-aiPointText" style="top:97.3968%;margin-top:-6.8px;left:0.7464%;width:113px;">
+                    <p class="g-pstyle2">Chart By: Vivek Patil</p>
+                </div>
+            </div>
+        
+        </div>
+        
+        <!-- End ai2html - 2023-08-08 14:55 -->
+        
+<p>Rare earths, also known as <a href="https://www.rareelementresources.com/rare-earth-elements">'the seeds of technology'</a> are not as rare as their name suggests. These elements, which are mined and processed around the globe, are more abundant than precious metals like gold, but extracting them in high concentrations and achieving economic viability is what makes them rare. They possess unique magnetic, phosphorescent, and catalytic properties that make them essential for today's electronics, green technologies, and military applications.</p>
+<p>Prices for key rare earth oxides have steadily increased over the past two years due to surging demand and restricted supply. According to a <a href="https://www.marketsandmarkets.com/Market-Reports/rare-earth-metals-market-121495310.html">MarketsandMarkets</a> report on the rare earth metals, the market is projected to reach over 10 billion dollars by 2026, from 5.3 billion dollars in 2021.
+</p>
+<p>Greenland has historically stayed at the margins of the global economy due to its remote location, lack of infrastructure and small population. Yet, this isolation has worked in its favor to preserve the natural habitat and local heritage.  For decades, Greenland has relied heavily on fishing and an annual <a href="https://www.trade.gov/country-commercial-guides/denmark-other-areas-kingdom-denmark#:~:text=Denmark%20provides%20Greenland%20with%20an,half%20of%20the%20public%20budget.">$511 million </a>subsidy from Denmark to balance its books. But the nation has also been taking gradual steps to leverage its vast mineral wealth and gain greater economic autonomy.
+</p>
+<p>While rare earth elements are only now grabbing headlines, Greenland's mining aspirations began decades ago, when the first traces of radioactive elements like uranium and thorium were found in 1957. After discovery, speculation grew about high concentrations of mineral wealth on the island. In the 1970s, the Kvanefjeld mine in southern Greenland, just 5 kms from <a href="https://www.theguardian.com/environment/2017/jan/28/greenland-narsaq-uranium-mine-dividing-town">Narsaq</a>, was found to hold rich deposits of rare earth oxides along with uranium. During the Cold War, the U.S. and its ally Denmark made Kvanefjeld mine a point of interest as the U.S. military was looking for nuclear fuel and materials. In 1983, Demark dropped the plan and the mining site was left abandoned. With China's rising dominance in rare earths in the 2000s, Greenland reopened the door to mining Kvanefjeld, lifting a longstanding ban on uranium extraction. In 2007, an Australian company called Greenland Minerals and Energy (GME) started drilling and exploring in the Kvanefjeld mine, which they claimed was the second largest rare earth deposit in the world. GME said Kvanefjeld could become the <a href="https://www.theguardian.com/environment/2017/jan/28/greenland-narsaq-uranium-mine-dividing-town">‘most significant western world producer of critical minerals’.</a> 
+</p>
+    </div>
+
+<div id="map"></div>
+
+    <div class="scroll-section">
+        <div class="step" id="step-0">
+            <p>Scroll down to see the next mine...</p>
+        </div>
+        <div class="step" id="step-1">
+            <p></p>
+            
+        </div>
+        <div class="step" id="step-2">
+            <!-- content for mine 3 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-3">
+            <!-- content for mine 4 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-4">
+            <!-- content for mine 5 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-5">
+            <!-- content for mine 6 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-6">
+            <!-- content for mine 7 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-7">
+            <!-- content for mine 8 will be added by Scrollama -->
+        </div>
+        <div class="step" id="step-8">
+            <!-- content for mine 9 will be added by Scrollama -->
+        </div> 
+        <div class="step" id="step-9">
+            <!-- content for mine 10 will be added by Scrollama -->
+        </div>                         
+    </div>
+</div> 
+
+</div>
+
+<div>
+    <h1>Scroll down to see the next mine...</h1>
+    <p>hfuwhefuefuerh9h</p>
+</div>
+
+<div class="intro-section">
+        
+        <p>After exploring the interactive map, you might have gathered a lot of insights about the various mines. Each mine has its own unique story, geological significance, and economic impact.</p>
+        <p>Throughout history, these mines have played pivotal roles in shaping the industries and economies of their respective regions. Whether it's the extraction of precious metals or rare minerals, the mining sector has been a cornerstone of industrial development.</p>
+        <p>Continue scrolling to learn more about individual mines, their histories, and their current statuses.</p>
+    </div>
+
+
+    
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <script src='map.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.1.5/scrollama.min.js"></script>
+    <script src='scroll.js'></script>
+</body>
+</html>
