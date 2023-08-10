@@ -98,7 +98,7 @@ window.mines = [
     { 
         // name: "Mine6", 
         coordinates: [-24.270750, 71.954230], 
-        description: "Finally, north of the Arctic Circle, the Malmbjerg molybdenum deposit has been studied as a large potential new source for Molybdenum. Located inland near Mesters Vig, environmental assessments found limited biodiversity impacts, but financial viability remains uncertain. As Greenland weighs each mining proposal, thorough reviews and local engagement will shape decisions on opening its mineral wealth.",
+        description: "Finally, north of the Arctic Circle, the Malmbjerg molybdenum deposit has been studied as a large potential new source for Molybdenum, used to make strong alloys. Though not a rare earth, the project has a potential to supply 30% of Europe’s molybdenum use with clean molybdenum. Owned by Greenland Resources, the company says the operation would have ‘environmentally friendly mine design focused on reduced water usage and low aquatic disturbance.’",
         zoom: 9, 
         bearing: 9,
         pitch: 10 
