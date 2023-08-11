@@ -15,7 +15,7 @@ window.mines = [
     { 
         // name: "Mine1", 
         coordinates: [-45.023, 72.343], 
-        description: "A self-governing territory of the Kingdom of Denmark, Greenland got its self rule in 2009, which gave Greenlanders complete control over their mines and natural resources. However, its foreign and defense policy is still under Copenhegen’s control. The country was caught in the spotlight in 2019, when former president Donald Trump discussed the idea that his administration considered buying the entire island of Greenland, saying, “Essentially it’s a large real estate deal. A lot of things can be done",
+        description: "From compiled satellite measurements over time, researchers have estimated that Greenland has lost around 116 billion tons of ice per year since 1990. This has fueled unexplored opportunities for rare earth mining, as investors are looking to capitalize on the melting ice.",
         zoom: 2, 
         bearing: 5,
         pitch: 2
@@ -55,7 +55,7 @@ window.mines = [
     { 
         // name: "Mine2b", 
         coordinates: [-46.049550, 60.913660], 
-        description: "According to Adrian Finch, a geologist and a researcher on rare earth mining in Greenland, “I think part of the problem was a perception, which may or may not have been true, that the rare earth was a cover for the selling of uranium.” He believes the ambiguity around uranium and the mining company’s intentions fueled opposition. “The Greenlandic government and many Greenlandic people are strongly opposed to the use of Greenland becoming involved in the nuclear industry, either as a power source or potentially as a source of weapons.",
+        description: "The Kvanefjeld mine in southern Greenland holds sizable deposits of rare earth elements along with radioactive uranium and thorium. Owned by Energy Transition Minerals, extracting the rare earths would inevitably generate large stockpiles of radioactive waste. Locals fear this could end up contaminating their environment with highly radioactive material. The mine is near Narsaq's drinking water supply, raising concerns over radioactive contamination. Currently, Energy Transition Minerals is locked in a legal fight with Greenland's government over mining rights at Kvanefjeld. The company is seeking billions in compensation if not permitted to mine the rare earths and radioactive elements.",
         zoom: 10.5, 
         bearing: 45,
         pitch: 17
@@ -63,7 +63,7 @@ window.mines = [
     { 
         // name: "Mine3", 
         coordinates: [-45.841850, 60.866580], 
-        description: "Just close to Kvanefjeld, Kringlerne rare earth project, owned by Australian mining company Tanbreez Mining, announced that it will begin its rare earth mining operations in Greenland by 2024 and aims to supply Europe’s needs to reduce the continent’s dependence on Asian suppliers. The company claims the project to be more sustainable than Kvanefjeld, as the mine's rare earths are tied to a mineral called steenstrupine that has never been successfully extracted anywhere. However, Tanbreez's Kringlerne mine takes a different approach, extracting from Eudialyte which contains no uranium and is more economically sustainable because of its high rare earth value. As Adrian F explains, “the beauty of Eudialyte is its significant proportion of heavy rare earths and lesser light rare earths.",
+        description: "Just close to Kvanefjeld, Kringlerne rare earth project, owned by Australian mining company Tanbreez Mining, announced that it will begin its rare earth mining operations in Greenland by 2024 and aims to supply Europe’s needs to reduce the continent’s dependence on Asian suppliers. The company claims the project to be more sustainable than Kvanefjeld, as the mine's rare earths are tied to a mineral called steenstrupine that has never been successfully extracted anywhere. However, Tanbreez's Kringlerne mine takes a different approach, extracting from Eudialyte which contains no uranium and is more economically sustainable because of its high rare earth value. As Adrian Finch, a geologist and a researcher on rare earth mining in Greenland explains, “the beauty of Eudialyte is its significant proportion of heavy rare earths and lesser light rare earths.", 
         zoom: 10.5, 
         bearing: 9,
         pitch: 10 
@@ -107,7 +107,7 @@ window.mines = [
     { 
         // name: "Mine7", 
         coordinates: [-42.039, 69.911], 
-        description: "As nations race to secure rare earths and critical minerals, Greenland finds itself in a privileged position with its vast untapped resources. However, its young government faces complex challenges with its mining policy and foreign investments. A concept known as the ecologically unequal exchange theory cautions that the environmental costs of extraction often fall disproportionately on less powerful nations. Professors Irene Henriques of York University and Steffen Bohm of the University of Exeter in their paper argue that the rare earth mining in Greenland would bear the burden of carrying the ecological costs of extracting heavy metals, while much of the value is generated in Western countries. According to the authors, wealthy countries often compel developing and underdeveloped states to open mines so they can secure strategic mineral resources.",
+        description: "As nations race to secure rare earths and critical minerals, Greenland finds itself in a privileged position with its vast untapped resources. However, its young government faces complex challenges with its mining policy and foreign investments. A concept known as the ecologically unequal exchange theory cautions that the environmental costs of extraction often fall disproportionately on less powerful nations.",
         zoom: 5, 
         bearing: 9,
         pitch: 10 
